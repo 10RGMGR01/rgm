@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A premium futuristic portfolio built with HTML, CSS, and vanilla JavaScript."
+    />
+    <title>Futuristic Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mouse-glow" aria-hidden="true"></div>
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="glow glow-purple" aria-hidden="true"></div>
+    <div class="glow glow-blue" aria-hidden="true"></div>
+    <div class="glow glow-orange" aria-hidden="true"></div>
+
+    <header class="navbar" data-nav>
+      <a class="logo" href="#home" aria-label="Portfolio home">
+        <span class="logo-mark">N</span>
+        <span>Nexus</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="resume-button" href="assets/resume.pdf">Resume</a>
+      <button class="menu-button" type="button" aria-label="Open navigation" data-menu-button>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <nav class="mobile-nav" aria-label="Mobile navigation" data-mobile-nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-copy reveal">
+          <p class="badge">Available for futuristic web projects</p>
+          <h1>Premium digital interfaces for the next era of the web.</h1>
+          <p class="hero-description">
+            A product-style portfolio for a developer and designer who builds dark,
+            polished, responsive experiences with glassmorphism, neon accents, and
+            smooth interactions using only HTML, CSS, and JavaScript.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore work</a>
+            <a class="button button-secondary" href="#contact">Hire me</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Futuristic interface illustration">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="core-panel glass">
+            <span class="panel-kicker">Interface Core</span>
+            <div class="pulse-ring"></div>
+            <div class="signal-bars">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-grid reveal" aria-label="Portfolio stats">
+          <article class="stat-card glass">
+            <span class="counter" data-target="24">0</span>
+            <p>Projects shipped</p>
+          </article>
+          <article class="stat-card glass">
+            <span class="counter" data-target="98">0</span>
+            <p>Performance score</p>
+          </article>
+          <article class="stat-card glass">
+            <span class="counter" data-target="7">0</span>
+            <p>Years learning</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2>Creative engineering with a product mindset.</h2>
+        </div>
+        <div class="about-layout">
+          <div class="portrait-card glass reveal">
+            <div class="portrait">
+              <span>NX</span>
+            </div>
+          </div>
+          <div class="about-copy reveal">
+            <p>
+              I design and build web experiences that feel premium, fast, and
+              memorable. My work blends visual systems, responsive layouts, and
+              thoughtful interaction details into interfaces that users can trust.
+            </p>
+            <p>
+              This portfolio is inspired by modern AI startup pages, product design
+              systems, and sharp software brands: refined like Apple, fluid like
+              Framer, structured like Linear, and optimized like Vercel.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>Focused tools for sleek front-end delivery.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card glass reveal">
+            <span class="skill-icon">H</span>
+            <h3>HTML5</h3>
+            <p>Semantic structure, accessible sections, and clean content flow.</p>
+            <div class="progress"><span style="width: 94%"></span></div>
+          </article>
+          <article class="skill-card glass reveal">
+            <span class="skill-icon">C</span>
+            <h3>CSS3</h3>
+            <p>Glassmorphism, responsive grids, animations, and visual polish.</p>
+            <div class="progress"><span style="width: 91%"></span></div>
+          </article>
+          <article class="skill-card glass reveal">
+            <span class="skill-icon">J</span>
+            <h3>JavaScript</h3>
+            <p>Scroll reveals, counters, navigation states, and interactive details.</p>
+            <div class="progress"><span style="width: 86%"></span></div>
+          </article>
+          <article class="skill-card glass reveal">
+            <span class="skill-icon">U</span>
+            <h3>UI/UX</h3>
+            <p>Readable hierarchy, conversion paths, and product-style interfaces.</p>
+            <div class="progress"><span style="width: 88%"></span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Work designed to look sharp and behave smoothly.</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card glass reveal">
+            <div class="project-image image-one"></div>
+            <div class="project-content">
+              <p class="project-type">Landing Page</p>
+              <h3>AI Startup Launch</h3>
+              <p>A dark product landing page with animated background layers and CTA-focused sections.</p>
+              <div class="tech-stack">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <a href="#contact">View case study</a>
+            </div>
+          </article>
+          <article class="project-card glass reveal">
+            <div class="project-image image-two"></div>
+            <div class="project-content">
+              <p class="project-type">Portfolio</p>
+              <h3>Glass Creator Profile</h3>
+              <p>A responsive personal brand site with glowing cards, timeline, and contact form.</p>
+              <div class="tech-stack">
+                <span>HTML</span><span>CSS</span><span>Motion</span>
+              </div>
+              <a href="#contact">View case study</a>
+            </div>
+          </article>
+          <article class="project-card glass reveal">
+            <div class="project-image image-three"></div>
+            <div class="project-content">
+              <p class="project-type">Dashboard</p>
+              <h3>Linear Command UI</h3>
+              <p>A structured dashboard concept with compact cards, readable metrics, and hover states.</p>
+              <div class="tech-stack">
+                <span>UI</span><span>CSS Grid</span><span>Vanilla JS</span>
+              </div>
+              <a href="#contact">View case study</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="timeline">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Timeline</p>
+          <h2>A learning path built around craft and momentum.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span>2022</span>
+            <h3>Foundation</h3>
+            <p>Built strong HTML, CSS, and responsive layout fundamentals.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>2024</span>
+            <h3>Interaction</h3>
+            <p>Added JavaScript-driven motion, scroll effects, and interface behavior.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>2026</span>
+            <h3>Premium Systems</h3>
+            <p>Focused on product-style portfolios, polished UI, and optimization.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Services</p>
+          <h2>Clean front-end work for ambitious digital brands.</h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-card glass reveal">
+            <h3>Web Development</h3>
+            <p>Static websites and landing pages with clean code and fast loading.</p>
+          </article>
+          <article class="service-card glass reveal">
+            <h3>Responsive Design</h3>
+            <p>Layouts tuned for desktop, laptop, tablet, and mobile screens.</p>
+          </article>
+          <article class="service-card glass reveal">
+            <h3>UI/UX Design</h3>
+            <p>Premium visual systems with clear hierarchy and conversion flow.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let us build something that feels ahead of its time.</h2>
+        </div>
+        <div class="contact-layout">
+          <form class="contact-form glass reveal">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Tell me about your project"></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Send message</button>
+          </form>
+          <div class="social-card glass reveal">
+            <h3>Social links</h3>
+            <a href="https://github.com/">GitHub</a>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+            <a href="https://x.com/">X / Twitter</a>
+            <a href="mailto:hello@example.com">hello@example.com</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Copyright 2026 Nexus Portfolio. Built with HTML, CSS, and JavaScript.</p>
+      <div>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
