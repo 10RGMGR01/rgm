@@ -685,6 +685,29 @@ h3 {
   box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.16);
 }
 
+.contact-feedback {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+.contact-feedback.success {
+  color: #b7f5cb;
+  background: rgba(59, 130, 246, 0.14);
+  border-color: rgba(59, 130, 246, 0.45);
+}
+
+.contact-feedback.error {
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.14);
+  border-color: rgba(245, 158, 11, 0.45);
+}
+
 .social-card {
   display: grid;
   align-content: start;

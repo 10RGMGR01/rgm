@@ -7,7 +7,7 @@
       name="description"
       content="A premium futuristic portfolio built with HTML, CSS, and vanilla JavaScript."
     />
-    <title>Futuristic Portfolio</title>
+    <title>Riyou's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   </head>
   <body>
     <div class="mouse-glow" aria-hidden="true"></div>
@@ -25,7 +26,7 @@
 
     <header class="navbar" data-nav>
       <a class="logo" href="#home" aria-label="Portfolio home">
-        <span class="logo-mark">N</span>
+        <span class="logo-mark">R</span>
         <span>Riyou</span>
       </a>
       <nav class="nav-links" aria-label="Main navigation">
@@ -83,7 +84,7 @@
 
         <div class="stats-grid reveal" aria-label="Portfolio stats">
           <article class="stat-card glass">
-            <span class="counter" data-target="5">0</span>
+            <span class="counter" data-target="7">0</span>
             <p>Projects shipped</p>
           </article>
           <article class="stat-card glass">
@@ -91,7 +92,7 @@
             <p>Performance score</p>
           </article>
           <article class="stat-card glass">
-            <span class="counter" data-target="5">0</span>
+            <span class="counter" data-target="3">0</span>
             <p>Years learning</p>
           </article>
         </div>
@@ -105,7 +106,7 @@
         <div class="about-layout">
           <div class="portrait-card glass reveal">
             <div class="portrait">
-              <span>NX</span>
+              <span>R</span>
             </div>
           </div>
           <div class="about-copy reveal">
@@ -208,12 +209,12 @@
         </div>
         <div class="timeline">
           <article class="timeline-item reveal">
-            <span>2022</span>
+            <span>2023</span>
             <h3>Foundation</h3>
-            <p>Built strong HTML, CSS, and responsive layout fundamentals.</p>
+            <p>Built web development fundamentals.</p>
           </article>
           <article class="timeline-item reveal">
-            <span>2024</span>
+            <span>2025</span>
             <h3>Interaction</h3>
             <p>Added JavaScript-driven motion, scroll effects, and interface behavior.</p>
           </article>
@@ -252,7 +253,7 @@
           <h2>Let us build something that feels ahead of its time.</h2>
         </div>
         <div class="contact-layout">
-          <form class="contact-form glass reveal">
+          <form id="contact-form" class="contact-form glass reveal">
             <label>
               Name
               <input type="text" name="name" placeholder="Your name" />
@@ -267,6 +268,7 @@
             </label>
             <button class="button button-primary" type="submit">Send message</button>
           </form>
+          <div id="contact-feedback" class="contact-feedback" role="status" aria-live="polite" hidden></div>
           <div class="social-card glass reveal">
             <h3>Social links</h3>
             <a href="https://www.instagram.com/rgm88_creative/">Instagram</a>
